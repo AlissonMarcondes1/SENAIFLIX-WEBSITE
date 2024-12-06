@@ -17,7 +17,7 @@
         font-size: 8px !important; /* Reduz o tamanho da fonte para 8px em telas pequenas */
     
 
-header {
+.cabecalho {
     position: absolute; /* Faz o header sobrepor outros elementos na página */
     width: 100%; /* Define a largura do header como 100% da tela */
     background-color: black; /* Define o fundo do header como preto */
@@ -31,14 +31,14 @@ header {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#ffffff",GradientType=1); /* Gradiente para navegadores antigos do Internet Explorer */
 }
 
-header .title a {
+.cabecalho .title a {
 
     color: white;
     text-decoration: none;
 
 }
 
-header nav a {
+.cabecalho  nav a {
     color: white; /* Define a cor dos links dentro do <nav> como branca */
     text-decoration: none; /* Remove o sublinhado dos links */
     margin-left: 60px; /* Adiciona 60px de espaço à esquerda dos links */
@@ -568,9 +568,44 @@ body {
     width: 48%;
     margin-bottom: 20px;
     margin-right: 20px;
-    
-
-
-    
+        
 }
+
+/*cabecalho mobile*/
+
+.cabecalho {
+
+    display: none;
+
+}
+
+#cabecalho-mobile {
+
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    z-index: 2;
+
+}
+
+#cabecalho-mobile nav {
+
+    display: flex;
+    flex-direction: column;
+    padding-top: 20vh;
+    padding-left: 15px;
+
+}
+
+#cabecalho-mobile nav a {
+
+    color: white;
+    font-size: 4em;
+    margin-bottom: 40px;
+
+
+
+}
+
 }
